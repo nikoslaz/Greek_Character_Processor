@@ -32,3 +32,28 @@ charmap[0xC0][0] = 0x69;    // 'I'
 charmap[0xC0][1] = DIALITIKA // '¨'
 charmap[0xC0][2] = TONOS;   // '´'
 ```
+
+## Special Sequences
+
+| Greek Sequence | Latin Equivalent |
+|----------------|------------------|
+| μπ             | **b**            |
+| Μπ             | **B**            |
+| ντ             | **d**            |
+| Ντ             | **D**            |
+
+## Build and Run
+
+```bash
+gcc main.c -o greek_processor
+./greek_processor < input.txt > output.txt
+```
+
+## Input/Output Examples
+
+| Input    | Output         |
+|----------|----------------|
+| Μπαίρω   | Bairo          |
+| ντύνω    | dino           |
+| άέήίόύώ  | a´e´h´i´o´y´w´ |
+
